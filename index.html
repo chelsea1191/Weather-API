@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Chelsea's Weather App</title>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' />
+        <link href="style.css" rel="stylesheet">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js'></script>
+        <script src='app.js' defer></script>
+    </head>
+
+    <body>
+        <div id='content'>
+            <div class='container jumbotron'>
+                <div class='row' id='title'>
+                    <h3>Weather Conditions</h3>
+                </div>
+                <form>
+                    <div class='row mb-2'>
+                        <div class='form-check-inline'>
+                            <input class='form-check-input radio' type='radio' name='gridRadios' id='City' checked>
+                            <label class='form-check-label' for='gridRadios'>City</label>
+                        </div>
+                        <div class='form-check-inline'>
+                            <input class='form-check-input radio' type='radio' name='gridRadios' id='Zip'>
+                            <label class='form-check-label' for='gridRadios'>Zip</label>
+                        </div>
+                        <div class='form-check-inline'>
+                            <input class='form-check-input radio' type='radio' name='gridRadios' id='Longitude, Latitude'>
+                            <label class='form-check-label' for='gridRadios'>Longitude, Latitude</label>
+                        </div>
+                    </div>
+                    <div class='row form-check-inline'>
+                        <div>
+                            <input type='text' class='form-control' placeholder='City' id='text'>
+                        </div>
+                        <div class='mx-2'>
+                            <button type='submit' class='btn btn-primary' id='btn-submit'>Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <!--<div class="image">
+                    <img src='icon.png'>
+                </div>-->
+                <div  id='information'>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
